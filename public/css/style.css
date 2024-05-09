@@ -25,7 +25,7 @@ html {
      background-color: rgb(35, 34, 40);
  }
  .navbar-nav .nav-link {
-     color: black;
+     color: rgb(200, 194, 180);
      font-weight: bold;
      font-size: 1.5rem;
   }
@@ -91,7 +91,7 @@ html {
 .title {
     font-size: 3em;
     text-align: center;
-    color: black;
+    color: rgb(200, 194, 180);
 }
 .image-album {
     display: block;
@@ -103,7 +103,7 @@ html {
     cursor: pointer;
 }
 .links {
-    color: black;
+    color: rgb(200, 194, 180);
     text-decoration: none;
 }
 
