@@ -132,7 +132,7 @@ html {
 
 /*Revisit to find a better method than !important to override bootstrap*/
 @media only screen and (max-width: 900px) {
-    #bootstrap-overrides {
+    #bootstrap-overrides, #bootstrap-ovveridesP {
         display: block !important;
         width: 100% !important;
         height: auto !important;

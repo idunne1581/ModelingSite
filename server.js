@@ -20,5 +20,5 @@ app.get('/portfolio', (request,response) => {
     });    
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running`);
+    console.log(`Server is running, you better go catch it`);
 });
