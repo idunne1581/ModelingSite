@@ -4,7 +4,11 @@ const app = express();
 
 require('dotenv').config({ path: './config/.env'});
 
-app.set("Views", path.join(__dirname, "Views")); // Set the correct views directory
+//Log directory to make sure it's correct
+console.log("Directory Name:", __dirname);
+console.log("Views Path:", path.join(__dirname, "views"));
+
+app.set("views", path.join(__dirname, "views")); 
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -21,5 +25,6 @@ app.get('/portfolio', (request,response) => {
     });    
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log(`Server is running on port ${process.env.Port || 3000}, you better go catch it`);
+    console.log(`Server is running on port ${process.env.PORT || 3000}, you better go catch it`);
 });
+
