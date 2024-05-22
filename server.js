@@ -4,8 +4,8 @@ const app = express();
 
 require('dotenv').config({ path: './config/.env'});
 
-app.set('views', path.join(__dirname, 'views')); // Set the correct views directory
-app.set('view engine', 'ejs');
+app.set("Views", path.join(__dirname, "Views")); // Set the correct views directory
+app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, 'public')));
 
