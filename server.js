@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path');
+const path = require("path");
 const app = express();
 
 require('dotenv').config({ path: './config/.env'});
@@ -21,7 +21,7 @@ app.get('/', (request,response) => {
     });
 
 app.get('/portfolio', (request,response) => {
-        response.render('portfolio')
+        response.render('portfolio.ejs')
     });    
 
 app.listen(process.env.PORT || 3000, () => {
