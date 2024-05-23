@@ -21,7 +21,7 @@ app.get('/', (request,response) => {
     });
 
 app.get('/portfolio', (request,response) => {
-        response.render('portfolio.ejs')
+        response.render('portfolio')
     });    
 
 app.listen(process.env.PORT || 3000, () => {
